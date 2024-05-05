@@ -58,8 +58,8 @@ private:
         cout << "Welcome to Tic Tac Toe!\n";
         cout << "1. Start Game\n";
         cout << "2. View game history\n";
-        cout << "3. Exit\n";
-        cout << "Enter your choice: ";
+        cout << "3. Quit game\n";
+        cout << "Enter your choice (1-3): ";
     }
 
     void startGame() {
@@ -89,7 +89,7 @@ private:
                     gameOver = true;
                     players[currentPlayerIndex].wins++;
                     printBoard();
-                    cout << players[currentPlayerIndex].name << " wins!" << endl;
+                    cout << players[currentPlayerIndex].name << " wins this round!" << endl;
                 } else if (checkDraw()) {
                     gameOver = true;
                     numDraws++;
